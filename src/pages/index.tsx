@@ -1,3 +1,9 @@
+import Header from '@/components/Header';
+
 export default function Home() {
-  return <main>Hi</main>;
+  return (
+    <main className="mx-auto my-10 max-w-md">
+      <Header />
+    </main>
+  );
 }
