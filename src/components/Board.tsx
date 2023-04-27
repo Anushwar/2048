@@ -155,28 +155,30 @@ const Board = () => {
   }, [animations, board, setRenderedBoard, setRenderedAnimations]);
 
   return (
-    <div
-      className={`border-3 relative grid touch-none select-none gap-4 rounded-md bg-[#bbada0] p-5`}
-      onMouseDown={onMouseStart}
-      onMouseUp={onMouseEnd}
-      onMouseLeave={onMouseEnd}
-      onTouchStart={onTouchStart}
-      onTouchMove={onTouchMove}
-      onTouchEnd={onTouchEnd}
-      // Below was written instead of inline style because issues with the grid columns.
-      style={{
-        gridTemplateColumns: `repeat(${boardSize}, 1fr)`,
-      }}
-    >
-      {renderedBoard.map((value, i) => (
-        <Tile
-          value={value}
-          key={i}
-          animations={renderedAnimations?.filter(
-            (animation) => animation.index === i,
-          )}
-        />
-      ))}
+    <div className="relative">
+      <div
+        className={`border-3 grid touch-none select-none gap-4 rounded-md bg-[#bbada0] p-5`}
+        onMouseDown={onMouseStart}
+        onMouseUp={onMouseEnd}
+        onMouseLeave={onMouseEnd}
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+        // Below was written instead of inline style because issues with the grid columns.
+        style={{
+          gridTemplateColumns: `repeat(${boardSize}, 1fr)`,
+        }}
+      >
+        {renderedBoard.map((value, i) => (
+          <Tile
+            value={value}
+            key={i}
+            animations={renderedAnimations?.filter(
+              (animation) => animation.index === i,
+            )}
+          />
+        ))}
+      </div>
       <Overlay />
     </div>
   );
