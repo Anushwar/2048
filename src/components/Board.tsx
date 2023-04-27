@@ -8,6 +8,7 @@ import { Direction } from '@/types/Direction';
 import { moveAction } from '@/store/action';
 import { type BoardType } from '@/utils/board';
 import { type Animation, AnimationType } from '@/types/Animations';
+import Overlay from './Overlay';
 
 const Board = () => {
   const dispatch = useAppDispatch();
@@ -162,6 +163,7 @@ const Board = () => {
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
+      // Below was written instead of inline style because issues with the grid columns.
       style={{
         gridTemplateColumns: `repeat(${boardSize}, 1fr)`,
       }}
@@ -175,6 +177,7 @@ const Board = () => {
           )}
         />
       ))}
+      <Overlay />
     </div>
   );
 };
