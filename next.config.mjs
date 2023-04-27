@@ -7,7 +7,6 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const pwa = withPWA({
   dest: 'public',
   register: true,
