@@ -1,6 +1,10 @@
 import Control from './Control';
+import useAppSelector from '@/hooks/useAppSelector';
 
 const Header = () => {
+  const score = useAppSelector((state) => state.app.score);
+  const best = useAppSelector((state) => state.app.best);
+
   return (
     <>
       <div className="flex justify-between align-middle">
@@ -8,11 +12,11 @@ const Header = () => {
         <div className="flex gap-5">
           <div className="m-auto rounded-md bg-[#bbada0] p-5 text-center font-bold">
             <div className="font-bold uppercase">Score</div>
-            <div>{200}</div>
+            <div>{score}</div>
           </div>
           <div className="m-auto rounded-md border-2 bg-[#bbada0] p-5 text-center font-bold">
             <div className="font-bold uppercase">Best</div>
-            <div>{20000}</div>
+            <div>{best}</div>
           </div>
         </div>
       </div>
