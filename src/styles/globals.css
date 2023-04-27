@@ -7,5 +7,5 @@ body {
 }
 
 button {
-  @apply m-0 whitespace-nowrap rounded-md bg-[#8f7a66] p-2 align-middle font-bold leading-3 text-white outline-none;
+  @apply m-0 whitespace-nowrap rounded-md bg-[#8f7a66] p-2 align-middle font-bold leading-3 text-white outline-none disabled:cursor-not-allowed disabled:opacity-75;
 }
