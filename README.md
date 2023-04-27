@@ -1,4 +1,4 @@
-# 2048
+# 🕹️ 2048
 
 Implementation of the famous game 2048 game in Next.js. You can play it
 [here](https://2048-react.herokuapp.com/).
