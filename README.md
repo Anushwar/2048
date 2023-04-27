@@ -1,7 +1,7 @@
 # 🕹️ 2048
 
 Implementation of the famous 2048 game in Next.js. You can play it
-[here](https://2048-anushwar.vercel.app/).
+[here](https://2048-zeta-neon.vercel.app/).
 
 ## Pre-requisites
 
@@ -40,7 +40,7 @@ on any device.
 
   1. Open your preferred web browser (Google Chrome, Firefox, Safari, or
      Microsoft Edge).
-  2. Go to the [app](https://2048-anushwar.vercel.app/).
+  2. Go to the [app](https://2048-zeta-neon.vercel.app/).
   3. On the top right corner of your browser, click the three-dot icon (Chrome,
      Microsoft Edge) or the hamburger icon (Firefox, Safari).
   4. From the dropdown menu, click "Install 2048" or "Add to Home Screen."
@@ -50,7 +50,7 @@ on any device.
 
   1. Open your preferred mobile browser (Google Chrome, Safari, Firefox, or
      Microsoft Edge).
-  2. Go to the [app](https://2048-anushwar.vercel.app/).
+  2. Go to the [app](https://2048-zeta-neon.vercel.app/).
   3. Click the "Add to Home Screen" button on the browser's menu.
   4. Rename the app if you wish, and then click "Add."
   5. The PWA will now be installed on your device.
