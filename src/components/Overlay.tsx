@@ -5,7 +5,11 @@ import { useCallback } from 'react';
 
 const Overlay: React.FC = () => {
   const dispatch = useAppDispatch();
-  const reset = useCallback(() => dispatch(resetAction(4)), [dispatch]);
+  const boardSize = useAppSelector((state) => state.app.boardSize);
+  const reset = useCallback(
+    () => dispatch(resetAction(boardSize)),
+    [dispatch, boardSize],
+  );
   const dismiss = useCallback(() => dispatch(dismissAction()), [dispatch]);
 
   const defeat = useAppSelector((state) => state.app.defeat);
