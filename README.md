@@ -31,6 +31,30 @@ Finally, open your browser and go to http://localhost:3000 to play the game.
 - The game is played with the arrow keys ( &larr; &uarr; &darr; &rarr; ) .
 - If you want to play on your phone, you can use the swipe gestures.
 
+## Download
+
+This is a progressive web app, so you can download it to your phone or computer
+on any device.
+
+- ### For Desktop Users 💻:
+
+  1. Open your preferred web browser (Google Chrome, Firefox, Safari, or
+     Microsoft Edge).
+  2. Go to the [app](https://2048-anushwar.vercel.app/).
+  3. On the top right corner of your browser, click the three-dot icon (Chrome,
+     Microsoft Edge) or the hamburger icon (Firefox, Safari).
+  4. From the dropdown menu, click "Install 2048" or "Add to Home Screen."
+  5. Follow the prompts to install the PWA.
+
+- ### For Mobile Users 📱:
+
+  1. Open your preferred mobile browser (Google Chrome, Safari, Firefox, or
+     Microsoft Edge).
+  2. Go to the [app](https://2048-anushwar.vercel.app/).
+  3. Click the "Add to Home Screen" button on the browser's menu.
+  4. Rename the app if you wish, and then click "Add."
+  5. The PWA will now be installed on your device.
+
 ## Implementation
 
 - The language used is [TypeScript](https://www.typescriptlang.org/).
